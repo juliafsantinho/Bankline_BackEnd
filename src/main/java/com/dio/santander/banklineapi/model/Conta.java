@@ -5,7 +5,7 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class Conta {
-
+	
 	@Column(name = "conta_numero")
 	private Long numero;
 	
@@ -25,8 +25,5 @@ public class Conta {
 	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
 	}
-	
-	
-	
 	
 }

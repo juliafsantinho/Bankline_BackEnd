@@ -8,10 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "tb_correntista")
 public class Correntista {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -29,11 +30,9 @@ public class Correntista {
 	public Conta getConta() {
 		return conta;
 	}
-	
 	public void setConta(Conta conta) {
 		this.conta = conta;
-	}	
-	
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -52,9 +51,6 @@ public class Correntista {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-	
-	
 	
 	
 }
